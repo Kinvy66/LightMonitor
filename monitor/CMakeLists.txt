@@ -13,3 +13,9 @@ set(SOURCES
 )
 
 add_library(monitor SHARED ${SOURCES})
+target_link_libraries(monitor
+        PUBLIC
+        monitor_proto
+        boost_system
+        boost_chrono
+)

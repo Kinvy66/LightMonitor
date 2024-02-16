@@ -1,6 +1,5 @@
-#include "monitor/net_monitor.h"
-#include "utils/read_file.h"
-#include "utils/utils.h"
+#include "net_monitor.h"
+#include "utils.h"
 
 namespace monitor {
 void NetMonitor::UpdateOnce(monitor::proto::MonitorInfo* monitor_info) {

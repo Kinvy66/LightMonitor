@@ -2,7 +2,7 @@
 
 #include <string>
 
-#include "monitor/monitor_inter.h"
+#include "monitor_inter.h"
 #include "monitor_info.grpc.pb.h"
 namespace monitor {
 class MonitorInter {

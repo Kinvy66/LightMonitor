@@ -8,7 +8,7 @@
 **/
 #include "utils.h"
 
-namespace lmonitor {
+namespace monitor {
 
 bool ReadFile::ReadLine(std::vector<std::string>* args) {
     std::string line;
@@ -24,4 +24,5 @@ bool ReadFile::ReadLine(std::vector<std::string>* args) {
         args->push_back(word);
     }
     return true;
+}
 }

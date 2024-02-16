@@ -14,8 +14,9 @@
 #include <sstream>
 #include <string>
 #include <vector>
+#include <boost/chrono.hpp>
 
-namespace lmonitor {
+namespace monitor {
 class ReadFile {
 public:
     explicit ReadFile(const std::string& name) : ifs_(name) {}
@@ -45,6 +46,17 @@ public:
 private:
     std::ifstream ifs_;
 };
+
+class Utils {
+public:
+    static double SteadyTimeSecond(
+            const boost::chrono::steady_clock::time_point &t1,
+            const boost::chrono::steady_clock::time_point &t2) {
+        boost::chrono::duration<double> time_second = t1 - t2;
+        return time_second.count();
+    }
+};
+
 }
 
 #endif //LIGHTMONITOR_UTILS_H

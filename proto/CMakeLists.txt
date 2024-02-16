@@ -18,7 +18,7 @@ set(PROTO_FILES
 #
 # Add Library target with protobuf sources
 #
-add_library(monitor_proto ${PROTO_FILES})
+add_library(monitor_proto SHARED ${PROTO_FILES})
 target_link_libraries(monitor_proto
     PUBLIC
         protobuf::libprotobuf

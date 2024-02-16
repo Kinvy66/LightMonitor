@@ -1,8 +1,6 @@
-#include "monitor/cpu_load_monitor.h"
+#include "cpu_load_monitor.h"
+#include "utils.h"
 
-#include "utils/read_file.h"
-
-#include "monitor_info.grpc.pb.h"
 #include "monitor_info.pb.h"
 
 namespace monitor {

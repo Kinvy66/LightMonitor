@@ -1,5 +1,5 @@
-#include "monitor/mem_monitor.h"
-#include "utils/read_file.h"
+#include "mem_monitor.h"
+#include "utils.h"
 
 namespace monitor {
 static constexpr float KBToGB = 1000 * 1000;

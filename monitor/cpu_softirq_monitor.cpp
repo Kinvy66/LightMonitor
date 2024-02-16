@@ -1,8 +1,5 @@
-#include "monitor/cpu_softirq_monitor.h"
-
-#include "utils/read_file.h"
-#include "utils/utils.h"
-#include "monitor_info.grpc.pb.h"
+#include "cpu_softirq_monitor.h"
+#include "utils.h"
 #include "monitor_info.pb.h"
 
 namespace monitor {
