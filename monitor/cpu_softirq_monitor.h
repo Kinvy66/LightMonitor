@@ -28,7 +28,7 @@ class CpuSoftIrqMonitor : public MonitorInter {
 
  public:
   CpuSoftIrqMonitor() {}
-  void UpdateOnce(monitor::proto::MonitorInfo* monitor_info);
+  void UpdateOnce(monitor::proto::MonitorInfo* monitor_info) override;
   void Stop() override {}
 
  private:

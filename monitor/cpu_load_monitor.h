@@ -10,7 +10,7 @@ namespace monitor {
 class CpuLoadMonitor : public MonitorInter {
  public:
   CpuLoadMonitor() {}
-  void UpdateOnce(monitor::proto::MonitorInfo* monitor_info);
+  void UpdateOnce(monitor::proto::MonitorInfo* monitor_info) override;
   void Stop() override {}
 
  private:
